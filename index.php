@@ -29,7 +29,13 @@ include("functions.php");
         printArr($numbers);
 
         $max = largest($numbers);
-        echo "<br> Largest Number: $max";
+        echo "<br> Largest Number: $max <br>";
+
+        echo "<br> Remove Duplicates: <br>";
+        printArr(removeDups($numbers));
+
+        echo "<br>Distribution: <br>";
+        var_dump(distribution($numbers));
     ?>
 </body>
 </html>
